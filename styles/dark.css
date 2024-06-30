@@ -9,4 +9,109 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background-color: #000028;
+  --background-image: url(./images/cover-image-dark.png);
+  --text-color: #F1B2CE;
+  --accent-color-backgroung: #FF0070;
+  --main-header-color: #DB00FF;
+  --accent-color: #FF0070;
+  --header-color: #000028;
+  --header-color-sub: #FF0070;
+
+  .header__decorated-text {
+    display: inline-block;
+    color: var(--accent-color);
+    font-family: 'IBM Plex mono';
+    font-size: 18px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
+
+  .header__decorated-text::after {
+    content:'';
+    display: inline-block;
+    block-size: 10px;
+    inline-size: 10px;
+    border-radius: 50%;
+    margin-inline-start: 10px;
+    box-shadow: 0px 0px 4px 5px rgba(255, 0, 112, 0.5);
+    background-color: var(--accent-color);
+  }
+
+  .header__theme-menu-button_active {
+    pointer-events: none;
+}
+
+.header__theme-menu-button:active {
+    border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:hover {
+    border: 1px solid rgb(255, 0, 112, 0.5);
+}
+
+.header__theme-menu-button:focus {
+    outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid #FF0070;
+}
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #000028;
+        --background-image: url(./images/cover-image-dark.png);
+        --text-color: #F1B2CE;
+        --accent-color-backgroung: #FF0070;
+        --main-header-color: #DB00FF;
+        --accent-color: #FF0070;
+        --header-color: #000028;
+        --header-color-sub: #FF0070;}
+    
+       /* .header__decorated-text {
+            display: inline-block;
+            color: var(--accent-color);
+            font-family: 'IBM Plex mono';
+            font-size: 18px;
+            text-transform: uppercase;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        
+          .header__decorated-text::after {
+            content:'';
+            display: inline-block;
+            block-size: 10px;
+            inline-size: 10px;
+            border-radius: 50%;
+            margin-inline-start: 10px;
+            box-shadow: 0px 0px 4px 5px rgba(255, 0, 112, 0.5);
+            background-color: var(--accent-color);
+          } */
+        
+          .header__theme-menu-button_active {
+            pointer-events: none;
+        }
+        
+        .header__theme-menu-button:active {
+            border: 1px solid var(--accent-color);
+        }
+        
+        .header__theme-menu-button:hover {
+            border: 1px solid rgb(255, 0, 112, 0.5);
+        }
+        
+        .header__theme-menu-button:focus {
+            outline: none;
+        }
+        
+        .header__theme-menu-button:focus-visible {
+            border-bottom: 1px solid #FF0070;
+        }
+    }
