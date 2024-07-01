@@ -17,6 +17,10 @@
   --accent-color: #FF0070;
   --header-color: #000028;
   --header-color-sub: #FF0070;
+
+  .header__decorated-text {
+    display: inline-block;
+}
 }
 
 
@@ -29,5 +33,10 @@
         --main-header-color: #DB00FF;
         --accent-color: #FF0070;
         --header-color: #000028;
-        --header-color-sub: #FF0070;}
+        --header-color-sub: #FF0070;
     }
+
+    .header__decorated-text {
+        display: inline-block;
+    }
+}
