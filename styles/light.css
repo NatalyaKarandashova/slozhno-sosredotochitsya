@@ -17,6 +17,7 @@
   --background-image: url(../images/cover-image-light.png);
   --header-color: #353430;
   --header-color-sub: #353430;
+  --hover: rgb(53, 52, 48, 0.4);
 
   .header__decorated-text {
     display: none;
@@ -33,6 +34,7 @@
         --background-image: url(../images/cover-image-light.png);
         --header-color: #353430;
         --header-color-sub: #353430;
+        --hover: rgb(53, 52, 48, 0.4);
     }
 
     .header__decorated-text {
