@@ -81,7 +81,8 @@
     inline-size: 491px;
     justify-self: end;
     align-self: center;
-    min-block-size: 90px;
+    height: fit-content;
+    padding-block-end: 17px;
 }
 
 .header__decorated-text {
@@ -338,7 +339,7 @@
 
     .header__header-description {
         inline-size: 364px;
-        min-block-size: 130px;
+        height: fit-content;
     }
 
     .reason {
